@@ -442,7 +442,7 @@ img {
 
 .customers-item {
   height: 88px;
-  width: 168px;
+  width: calc((100% - 120) / 6);
   padding: 16px 32px;
 }
 
