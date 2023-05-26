@@ -457,12 +457,15 @@ img {
   height: 100%;
   border: 1px solid #8e8f99;
   border-radius: 4px;
+  color: #8e8f99;
 }
-
+.customers-link:hover,
+.customers-link:focus {
+  border: 1px solid #404bbf;
+  color: #404bbf;
+}
 .customers-icon {
-  height: 56px;
-  width: 104px;
-  fill: #8e8f99;
+  fill: currentColor;
 }
 .customers-icon:hover,
 .customers-icon:focus {
