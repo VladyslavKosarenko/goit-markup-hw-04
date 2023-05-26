@@ -464,10 +464,6 @@ img {
 .customers-icon {
   fill: currentColor;
 }
-.customers-icon:hover,
-.customers-icon:focus {
-  fill: #404bbf;
-}
 
 /* footer */
 
