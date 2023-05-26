@@ -172,9 +172,11 @@ img {
     ),
     url(..//images/bg-img/imgbg.jpg);
 
-  width: 1440px;
+  max-width: 1440px;
   height: 600px;
   margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center;
 
   background-size: cover;
 }
@@ -246,6 +248,7 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 .icon-quality-list {
   display: flex;
   gap: 24px;
@@ -253,11 +256,16 @@ img {
 }
 
 .icon-quality-item {
+}
+.qualiti-icon-container {
   height: 112px;
   width: 264px;
   border-radius: 4px;
   background: #f4f4fd;
   padding: 24px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .icon-quality {
   height: 64px;
@@ -394,7 +402,7 @@ img {
 .icon-team-link {
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   height: 100%;
   width: 100%;
 
@@ -402,7 +410,8 @@ img {
   background-color: #4d5ae5;
   padding: 12px;
 }
-.icon-team-link:hover {
+.icon-team-link:hover,
+.icon-team-link:focus {
   background: #404bbf;
 }
 .icon-team {
@@ -419,7 +428,7 @@ img {
 .customers-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.1;
+  line-height: 1.11;
 
   text-align: center;
   letter-spacing: 0.02em;
@@ -439,8 +448,6 @@ img {
   height: 88px;
   width: 168px;
   padding: 16px 32px;
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
 }
 .customers-item:hover {
   border: 1px solid #404bbf;
@@ -450,14 +457,19 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
 }
 
 .customers-icon {
   height: 56px;
   width: 104px;
-  fill: #8e8f99;
+  fill: currentColor;
 }
-.customers-icon:hover {
+.customers-icon:hover,
+.customers-icon:focus {
   fill: #404bbf;
 }
 
