@@ -443,7 +443,6 @@ img {
 .customers-item {
   height: 88px;
   width: calc((100% - 120px) / 6);
-  padding: 16px 32px;
 }
 
 .customers-link {
