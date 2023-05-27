@@ -108,21 +108,13 @@ img {
 
   color: var(--title-color);
   display: flex;
-  flex-direction: column;
 
   justify-content: center;
-  row-gap: 20px;
-  padding-top: 24px;
-}
-.header-item-link:hover::after {
-  content: "";
-  display: block;
-  width: 48px;
-  height: 4px;
 
-  background: #404bbf;
-  border-radius: 2px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
+
 .header-item-link:active,
 .header-item-link:hover,
 .header-item-link:focus {
@@ -633,7 +625,6 @@ img {
 }
 .portfolio-about-link:hover,
 .portfolio-about-link:focus {
-  border: 1px solid #f4f4fd;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
